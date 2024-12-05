@@ -40,8 +40,8 @@ Este proyecto permite calcular reajustes e intereses de boletas vencidas, con un
     ```plaintext
     API_REAJUSTE_URL=http://167.99.237.168:9073/one/api_pc_one_test/public
     API_UTM_URL=https://mindicador.cl/api/utm/
-    API_USERNAME=sramirez
-    API_PASSWORD=dOloId7wcEnkjj2!
+    API_USERNAME=APIUSERNAME
+    API_PASSWORD=APIPASSWORD
     PORT=3000
 
     DB_HOST=localhost
