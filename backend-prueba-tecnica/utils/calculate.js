@@ -2,7 +2,6 @@ const aproximarCLP = (monto) => {
   return Math.round(monto);
 };
 
-
 const calcularReajuste = (monto, factorReajuste) => {
   console.log('monto', monto);
   console.log('factorReajuste', factorReajuste);
@@ -16,7 +15,6 @@ const calcularMulta = (monto, mesesAtraso) => {
   const multa = monto * (1 + ((1.5 * mesesAtraso) / 100));
   const multaSola = multa - monto
  
-
   const dataMulta = {
     montoMasMulta: aproximarCLP(multa),
     mesesAtraso: mesesAtraso,

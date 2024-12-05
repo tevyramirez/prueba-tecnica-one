@@ -1,7 +1,6 @@
 const axios = require('axios');
-require('dotenv').config(); // Cargar las variables de entorno desde el archivo .env
+require('dotenv').config();
 
-// Función para obtener el factor de reajuste desde la API externa
 const getReajusteFactor = async (anioRegistro, mesRegistro, anioPago, mesPago) => {
   try {
     console.log('verificando que lleguen todas las variables', anioRegistro, mesRegistro, anioPago, mesPago);
@@ -19,7 +18,6 @@ const getReajusteFactor = async (anioRegistro, mesRegistro, anioPago, mesPago) =
   }
 };
 
-// Función para autenticar y obtener el token (en la API)
 const getAuthToken = async () => {
   const auth = Buffer.from(`${process.env.API_USERNAME}:${process.env.API_PASSWORD}`).toString('base64');
   try {

@@ -1,8 +1,6 @@
 const Auditoria = require('../models/auditoria');
 const { Op } = require('sequelize');
-const moment = require('moment'); 
 
-// Guardar una nueva auditoría
 const guardarAuditoria = async (datos) => {
   try {
     const auditoria = await Auditoria.create(datos);
@@ -13,7 +11,6 @@ const guardarAuditoria = async (datos) => {
   }
 };
 
-// Obtener todas las auditorías
 const getAllAuditorias = async () => {
   try {
     console.log("Intentando obtener todas las auditorías...");
@@ -26,10 +23,10 @@ const getAllAuditorias = async () => {
   }
 };
 
-// Obtener auditorías por rango de fecha
+
 const obtenerAuditoriasPorFecha = async (fechaInicio, fechaFin) => {
   try {
-    //formatear Fecha
+    //formatear fecha
     fechaInicio = new Date(fechaInicio);
     fechaFin = new Date(fechaFin); 
     const auditorias = await Auditoria.findAll({
