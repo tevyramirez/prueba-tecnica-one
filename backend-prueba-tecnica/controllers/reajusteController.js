@@ -11,7 +11,7 @@ const calcularReajusteYMulta = async (req, res) => {
     const fechaPag = new Date(fechaPago);
     console.log('Fecha de vencimiento:', fechaVenc);
     console.log('Fecha de pago:', fechaPag);
-    // Calcular los meses de atraso
+
     const mesesDeAtraso = calcularMesesAtraso(fechaVencimiento, fechaPago);
     var montoEnPesos = null
     // Obtener UTM

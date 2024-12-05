@@ -1,6 +1,6 @@
 const auditoriaService = require('../services/auditoriaService');
 
-// Crear una nueva auditoría
+
 const crearAuditoria = async (req, res) => {
   try {
     const datos = req.body;
@@ -11,7 +11,6 @@ const crearAuditoria = async (req, res) => {
   }
 };
 
-// Obtener auditorías por rango de fecha
 const obtenerAuditorias = async (req, res) => {
   try {
     const { fechaInicio, fechaFin } = req.query;
