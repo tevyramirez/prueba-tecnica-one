@@ -22,7 +22,7 @@ Este proyecto permite calcular reajustes e intereses de boletas vencidas, con un
 1. Clona el repositorio y ve al directorio `backend-prueba-tecnica`:
 
     ```bash
-    git clone <url_del_repositorio>
+    git clone https://github.com/tevyramirez/prueba-tecnica-one
     cd prueba-tecnica-one
     cd backend-prueba-tecnica
     ```
